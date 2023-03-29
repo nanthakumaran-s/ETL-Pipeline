@@ -1,0 +1,4 @@
+kafka-python
+s3fs
+tweepy
+py_dotenv
