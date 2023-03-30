@@ -13,10 +13,12 @@ producer = Producer("Tweets_Topic", "localhost:9092")
 
 
 class TweetStream(tweepy.StreamingClient):
-    newTweet = {}
+    newTweet = {
+        "category": "tweet",
+    }
 
     def on_connect(self):
-        print("Connected to Twitter API")
+        print("Connected")
 
     def on_includes(self, data):
         try:
@@ -32,7 +34,6 @@ def main():
     query = "google lang:en"
     stream = TweetStream(bearer_token)
     stream.add_rules(tweepy.StreamRule(query))
-    print(stream.get_rules())
     stream.filter(
         tweet_fields=["created_at", "author_id", "lang", "geo"],
         expansions=["author_id", "referenced_tweets.id", "geo.place_id"],
