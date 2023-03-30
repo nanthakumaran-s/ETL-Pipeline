@@ -5,3 +5,6 @@ py_dotenv
 requests
 textblob
 nltk
+elasticsearch
+s3fs
+uuid

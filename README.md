@@ -67,3 +67,32 @@ kafka-console-consumer.sh --topic Processed --bootstrap-server localhost:9092 --
 ```
 
 If the messages has `sentiment` in it then the transformers works fine.
+
+### Step 4: Load
+
+In this step you need to create a S3 bucket and replace the one with the default in `load/aws_consumer.py`. After that run the following commands in different terminal
+
+```sh
+python3 load/aws_consumer.py
+```
+
+```sh
+python3 load/elk_consumer.py
+```
+
+This will load the data to the S3 bucket and Elastic Search
+
+---
+
+## Elastic Search and Kibana
+
+Create a dashboard with the data from the loader and visualize the result of the ETL pipeline
+
+![Kibana](./assets/Kibana.png)
+
+## AWS
+
+In AWS you need to create a crawler with an IAM role and using AWS Athena you can view the results of the ETL pipeline
+
+![Athena 1](./assets/athena1.png)
+![Athena 2](./assets/athena2.png)
