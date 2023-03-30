@@ -2,7 +2,7 @@
 
 In this ETL pipeline, we are trying to analyze the sentiment of the users about Google with tweets and news as our data source.
 
-[Demo Vide](https://drive.google.com/file/d/1cx93UhIAicLN9uKmINEcDUvdAS0tpotb/view?usp=sharing)
+[Demo Video](https://drive.google.com/file/d/1cx93UhIAicLN9uKmINEcDUvdAS0tpotb/view?usp=sharing)
 
 ## Stacks
 
