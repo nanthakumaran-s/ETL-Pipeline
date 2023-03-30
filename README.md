@@ -1,6 +1,8 @@
 # ETL Pipeline for Tweets and News using Python, Kafka, AWS and ELK Stack
 
-In this ETL pipeline, we are trying to analyze the sentiment of the users about Google with tweets and news as our data source
+In this ETL pipeline, we are trying to analyze the sentiment of the users about Google with tweets and news as our data source.
+
+[Demo Vide](https://drive.google.com/file/d/1cx93UhIAicLN9uKmINEcDUvdAS0tpotb/view?usp=sharing)
 
 ## Stacks
 
