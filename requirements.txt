@@ -3,3 +3,5 @@ s3fs
 tweepy
 py_dotenv
 requests
+textblob
+nltk
