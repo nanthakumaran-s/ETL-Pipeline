@@ -1,5 +1,15 @@
 # ETL Pipeline for Tweets and News using Python, Kafka, AWS and ELK Stack
 
+In this ETL pipeline, we are trying to analyze the sentiment of the user about Google with tweets and news as our data source
+
+## Stacks
+
+- Python
+- Kafka with Zookeeper
+- AWS (Crawlers, Glue, Athena)
+- ELK (Elastic Search, Kibana)
+- textblob (Sentiment analysis)
+
 ## Architecture of the application
 
 ![arch](assets/architecture.png)
